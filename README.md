@@ -1,31 +1,35 @@
 # 📊 Predicción de Sueldos MTPE - Perú
 
-## 👨‍💻 Developed by Jorge Guillermo Olarte Quispe
+## Developed by Jorge Guillermo Olarte Quispe
 
-## 🏫 Universidad Nacional del Altiplano – Ingeniería de Sistemas
+## Universidad Nacional del Altiplano – Ingeniería de Sistemas
 
-**Predicción automatizada de remuneraciones mensuales en el sector privado peruano**  
-Aplicación web basada en inteligencia artificial que estima el sueldo mensual de un trabajador en función de características demográficas y laborales. Utiliza datos abiertos del **Ministerio de Trabajo y Promoción del Empleo (MTPE)** y un modelo de machine learning (XGBoost) entrenado con datos reales.
+**Predicción automatizada de remuneraciones mensuales en el sector privado peruano**
 
----
-
-## 🗂️ Estructura del Proyecto
-
-| Módulo              | Descripción                                          | Repositorio                                                                                    |
-| ------------------- | ---------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| 🖥️ Frontend         | Interfaz web en React + Tailwind para ingresar datos | [`mtpe-salary-predictor-react`](https://github.com/ArtStyle19/mtpe-salary-predictor-react)     |
-| 🔁 Backend          | API REST en Flask con modelo XGBoost                 | [`backend-mtpe-salary-predictor`](https://github.com/ArtStyle19/backend-mtpe-salary-predictor) |
-| 🧹 Preprocesamiento | Limpieza, codificación y entrenamiento del modelo    | Privado                                                                                        |
+Aplicación web basada en inteligencia artificial que estima el sueldo mensual de un trabajador en función de características demográficas y laborales.
+Utiliza datos abiertos del **Ministerio de Trabajo y Promoción del Empleo (MTPE)** y un modelo de machine learning (XGBoost) entrenado con datos reales.
 
 ---
 
-## 🎯 Objetivo del Proyecto
+## Estructura del Proyecto
+
+| Módulo           | Descripción                                          | Repositorio                                                                                |
+| ---------------- | ---------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| Frontend         | Interfaz web en React + Tailwind para ingresar datos | [`mtpe-salary-predictor-react`](https://github.com/ArtStyle19/mtpe-salary-predictor-react) |
+| Backend          | API REST en Flask con modelo XGBoost                 | [`mtpe-salary-predictor-flask`](https://github.com/ArtStyle19/mtpe-salary-predictor-flask) |
+| Preprocesamiento | Limpieza, codificación y entrenamiento del modelo    | Privado                                                                                    |
+
+---
+
+s
+
+## Objetivo del Proyecto
 
 Diseñar un sistema que, a partir de atributos como **edad, nivel educativo, ocupación, ubicación, tamaño de empresa, entre otros**, pueda predecir el sueldo mensual de un trabajador formal privado en Perú.
 
 ---
 
-## ⚙️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - **Frontend:** React, TypeScript, TailwindCSS, Fetch API
 - **Backend:** Python, Flask, XGBoost, Scikit-learn, Pandas, Joblib
@@ -34,31 +38,31 @@ Diseñar un sistema que, a partir de atributos como **edad, nivel educativo, ocu
 
 ---
 
-## 🧠 Proceso de Modelado Predictivo
+## Proceso de Modelado Predictivo
 
-1. 📥 **Carga de datos:** CSV delimitado por `;` con +10 columnas relevantes.
-2. 🧹 **Preprocesamiento:**
+1. **Carga de datos:** CSV delimitado por `;` con +10 columnas relevantes.
+2. **Preprocesamiento:**
    - Imputación de valores "NO DETERMINADO"
    - Codificación One-Hot para variables categóricas
    - Normalización con MinMaxScaler
-3. 🔄 **Automatización:** Pipeline con `ColumnTransformer` + persistencia con `joblib`
-4. 📈 **Modelado:** Entrenamiento con XGBoost (regresión) y validación con MAE y RMSE
-5. 🧪 **Evaluación:** El error promedio entre la predicción y el valor real fue de aproximadamente 844.85 soles peruanos (PEN).
-6. 💾 **Despliegue:** Backend con API `/predict` y `/get-options` + frontend dinámico
+3. **Automatización:** Pipeline con `ColumnTransformer` + persistencia con `joblib`
+4. **Modelado:** Entrenamiento con XGBoost (regresión) y validación con MAE y RMSE
+5. **Evaluación:** El error promedio entre la predicción y el valor real fue de aproximadamente 844.85 soles peruanos (PEN).
+6. **Despliegue:** Backend con API `/predict` y `/get-options` + frontend dinámico
 
 ---
 
 ## 📈 Evaluación del Modelo
 
-### 🔍 Dispersión: Real vs Predicho
+### Dispersión: Real vs Predicho
 
 ![real_vs_pred](images/real_vs_pred.png)
 
-### 📉 Error Absoluto vs Sueldo Real
+### Error Absoluto vs Sueldo Real
 
 ![abs_error_vs_real](images/abs_error_vs_real.png)
 
-### 📊 Distribución del Error Absoluto
+### Distribución del Error Absoluto
 
 ![hist_abs_error](images/hist_abs_error.png)
 
@@ -66,21 +70,21 @@ Diseñar un sistema que, a partir de atributos como **edad, nivel educativo, ocu
 
 ## 🧬 Importancia de Variables (XGBoost)
 
-### 🎯 Feature Importance - Weight
+### Feature Importance - Weight
 
 ![importance_weight](images/importance_weight.png)
 
-### 🎯 Feature Importance - Gain
+### Feature Importance - Gain
 
 ![importance_gain](images/importance_gain.png)
 
-### 🎯 Feature Importance - Cover
+### Feature Importance - Cover
 
 ![importance_cover](images/importance_cover.png)
 
 ---
 
-## 👷‍♂️ Ejemplos de Perfiles Analizados (Visuales)
+## Ejemplos de Perfiles Analizados (Visuales)
 
 Estos perfiles visuales ayudan a contextualizar los escenarios laborales representados en el modelo:
 
