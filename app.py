@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify , render_template
 import pandas as pd
 import xgboost as xgb
 import joblib
@@ -48,6 +48,12 @@ categorical_columns = [
 #         ]), categorical_columns)
 #     ]
 # )
+
+
+# Página principal
+@app.route("/")
+def home():
+    return render_template("index.html", options=options_per_column)
 
 @app.route("/predict", methods=["POST"])
 def predict():
