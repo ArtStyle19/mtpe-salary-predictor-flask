@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Prediction Form</title>
+  </head>
+  <body>
+    <h1>Enter Input for Prediction</h1>
+    <form method="POST">
+      <!-- Rango de Edad -->
+      <label for="rango_edad">Rango de Edad:</label>
+      <select id="rango_edad" name="rango_edad">
+        <option value="25 A 29">25 A 29</option>
+        <option value="30 A 44">30 A 44</option>
+        <option value="45 A 60">45 A 60</option>
+        <option value="61 A MÃS">61 A MÁS</option>
+        <option value="HASTA 24">HASTA 24</option>
+        <option value="NO DETERMINADO">NO DETERMINADO</option>
+      </select>
+      <br />
+
+      <!-- Régimen Laboral -->
+      <label for="regimen_laboral">Régimen Laboral:</label>
+      <select id="regimen_laboral" name="regimen_laboral">
+        <option value="AGRARIO LEY 27360">AGRARIO LEY 27360</option>
+        <option value="CONSTRUCCIÓN CIVIL">CONSTRUCCIÓN CIVIL</option>
+        <option value="MICROEMPRESA (D. LEG. 1086)">
+          MICROEMPRESA (D. LEG. 1086)
+        </option>
+        <option value="MINEROS">MINEROS</option>
+        <option value="NO DETERMINADO">NO DETERMINADO</option>
+        <option value="OTROS NO PREVISTOS">OTROS NO PREVISTOS</option>
+        <option value="PEQUEÑA EMPRESA (D. LEG. 1086)">
+          PEQUEÑA EMPRESA (D. LEG. 1086)
+        </option>
+        <option value="PRIVADO GENERAL (D. LEG. N° 728)">
+          PRIVADO GENERAL (D. LEG. N° 728)
+        </option>
+      </select>
+      <br />
+
+      <!-- Nivel Educativo -->
+      <label for="nivel_educativo">Nivel Educativo:</label>
+      <select id="nivel_educativo" name="nivel_educativo">
+        <option value="EDUCACIÓN ESPECIAL COMPLETA">
+          EDUCACIÓN ESPECIAL COMPLETA
+        </option>
+        <option value="EDUCACIÓN ESPECIAL INCOMPLETA">
+          EDUCACIÓN ESPECIAL INCOMPLETA
+        </option>
+        <option value="EDUCACIÓN PRIMARIA COMPLETA">
+          EDUCACIÓN PRIMARIA COMPLETA
+        </option>
+        <option value="EDUCACIÓN PRIMARIA INCOMPLETA">
+          EDUCACIÓN PRIMARIA INCOMPLETA
+        </option>
+        <option value="EDUCACIÓN SECUNDARIA COMPLETA">
+          EDUCACIÓN SECUNDARIA COMPLETA
+        </option>
+        <option value="EDUCACIÓN SECUNDARIA INCOMPLETA">
+          EDUCACIÓN SECUNDARIA INCOMPLETA
+        </option>
+        <option value="EDUCACIÓN SUPERIOR COMPLETA (INSTITUTO SUPERIOR, ETC.)">
+          EDUCACIÓN SUPERIOR COMPLETA (INSTITUTO SUPERIOR, ETC.)
+        </option>
+        <option
+          value="EDUCACIÓN SUPERIOR INCOMPLETA (INSTITUTO SUPERIOR, ETC.)"
+        >
+          EDUCACIÓN SUPERIOR INCOMPLETA (INSTITUTO SUPERIOR, ETC.)
+        </option>
+        <option value="EDUCACIÓN TÉCNICA COMPLETA">
+          EDUCACIÓN TÉCNICA COMPLETA
+        </option>
+        <option value="EDUCACIÓN TÉCNICA INCOMPLETA">
+          EDUCACIÓN TÉCNICA INCOMPLETA
+        </option>
+        <option value="EDUCACIÓN UNIVERSITARIA COMPLETA">
+          EDUCACIÓN UNIVERSITARIA COMPLETA
+        </option>
+        <option value="EDUCACIÓN UNIVERSITARIA INCOMPLETA">
+          EDUCACIÓN UNIVERSITARIA INCOMPLETA
+        </option>
+        <option value="ESTUDIOS DE DOCTORADO COMPLETO">
+          ESTUDIOS DE DOCTORADO COMPLETO
+        </option>
+        <option value="ESTUDIOS DE DOCTORADO INCOMPLETO">
+          ESTUDIOS DE DOCTORADO INCOMPLETO
+        </option>
+        <option value="ESTUDIOS DE MAESTRÍA COMPLETA">
+          ESTUDIOS DE MAESTRÍA COMPLETA
+        </option>
+        <option value="ESTUDIOS DE MAESTRÍA INCOMPLETA">
+          ESTUDIOS DE MAESTRÍA INCOMPLETA
+        </option>
+        <option value="GRADO DE BACHILLER">GRADO DE BACHILLER</option>
+        <option value="GRADO DE DOCTOR">GRADO DE DOCTOR</option>
+        <option value="GRADO DE MAESTRÍA">GRADO DE MAESTRÍA</option>
+        <option value="NO DETERMINADO">NO DETERMINADO</option>
+        <option value="SIN EDUCACIÓN FORMAL">SIN EDUCACIÓN FORMAL</option>
+        <option value="TITULADO">TITULADO</option>
+      </select>
+      <br />
+
+      <!-- Régimen de Salud -->
+      <label for="regimen_salud">Régimen de Salud:</label>
+      <select id="regimen_salud" name="regimen_salud">
+        <option value="ESSALUD REGULAR (EXCLUSIVAMENTE)">
+          ESSALUD REGULAR (EXCLUSIVAMENTE)
+        </option>
+        <option value="ESSALUD REGULAR Y EPS/SERV. PROPIOS">
+          ESSALUD REGULAR Y EPS/SERV. PROPIOS
+        </option>
+        <option value="NO DETERMINADO">NO DETERMINADO</option>
+        <option value="OTROS ESSALUD">OTROS ESSALUD</option>
+        <option value="SIS-MICROEMPRESA">SIS-MICROEMPRESA</option>
+      </select>
+      <br />
+
+      <!-- Tamaño de Empresa -->
+      <label for="tamaão_empresa">Tamaño de Empresa:</label>
+      <select id="tamaão_empresa" name="tamaão_empresa">
+        <option value="DE 1 A 10 TRABAJADORES">DE 1 A 10 TRABAJADORES</option>
+        <option value="DE 101 A 500 TRABAJADORES">
+          DE 101 A 500 TRABAJADORES
+        </option>
+        <option value="DE 11 A 50 TRABAJADORES">DE 11 A 50 TRABAJADORES</option>
+        <option value="DE 501 A MÃS TRABAJADORES">
+          DE 501 A MÁS TRABAJADORES
+        </option>
+        <option value="DE 51 A 100 TRABAJADORES">
+          DE 51 A 100 TRABAJADORES
+        </option>
+      </select>
+      <br />
+
+      <!-- Sexo -->
+      <label for="sexo">Sexo:</label>
+      <select id="sexo" name="sexo">
+        <option value="FEMENINO">FEMENINO</option>
+        <option value="MASCULINO">MASCULINO</option>
+        <option value="NO DETERMINADO">NO DETERMINADO</option>
+      </select>
+      <br />
+
+      <!-- Departamento -->
+      <label for="departamento">Departamento:</label>
+      <select id="departamento" name="departamento">
+        <option value="AMAZONAS">AMAZONAS</option>
+        <option value="APURÍMAC">APURÍMAC</option>
+        <option value="AREQUIPA">AREQUIPA</option>
+        <option value="AYACUCHO">AYACUCHO</option>
+        <option value="CAJAMARCA">CAJAMARCA</option>
+        <option value="CALLAO">CALLAO</option>
+        <option value="CUSCO">CUSCO</option>
+        <option value="HUANCAVELICA">HUANCAVELICA</option>
+        <option value="HUÁNUCO">HUÁNUCO</option>
+        <option value="ICA">ICA</option>
+        <option value="JUNÍN">JUNÍN</option>
+        <option value="LA LIBERTAD">LA LIBERTAD</option>
+        <option value="LAMBAYEQUE">LAMBAYEQUE</option>
+        <option value="LIMA">LIMA</option>
+        <option value="LORETO">LORETO</option>
+        <option value="MADRE DE DIOS">MADRE DE DIOS</option>
+        <option value="MOQUEGUA">MOQUEGUA</option>
+        <option value="PASCO">PASCO</option>
+        <option value="PIURA">PIURA</option>
+        <option value="PUNO">PUNO</option>
+        <option value="SAN MARTÍN">SAN MARTÍN</option>
+        <option value="TACNA">TACNA</option>
+        <option value="TUMBES">TUMBES</option>
+        <option value="UCAYALI">UCAYALI</option>
+        <option value="ÁNCASH">ÁNCASH</option>
+      </select>
+      <br />
+
+      <!-- Actividad Económica -->
+      <label for="actividad_economica">Actividad Económica:</label>
+      <select id="actividad_economica" name="actividad_economica">
+        <option value="ACTIVIDADES INMOBILIARIAS, EMPRESARIALES Y DE ALQUILER">
+          ACTIVIDADES INMOBILIARIAS, EMPRESARIALES Y DE ALQUILER
+        </option>
+        <option value="ADMINISTRACIÓN PÚBLICA Y DEFENSA">
+          ADMINISTRACIÓN PÚBLICA Y DEFENSA
+        </option>
+        <option value="AGRICULTURA, GANADERÍA, CAZA Y SILVICULTURA">
+          AGRICULTURA, GANADERÍA, CAZA Y SILVICULTURA
+        </option>
+        <option
+          value="COMERCIO AL POR MAYOR Y AL POR MENOR, REP. VEHÍC. AUTOM."
+        >
+          COMERCIO AL POR MAYOR Y AL POR MENOR, REP. VEHÍC. AUTOM.
+        </option>
+        <option value="CONSTRUCCIÓN">CONSTRUCCIÓN</option>
+        <option value="ENSEÑANZA">ENSEÑANZA</option>
+        <option value="EXPLOTACIÓN DE MINAS Y CANTERAS">
+          EXPLOTACIÓN DE MINAS Y CANTERAS
+        </option>
+        <option value="HOGARES PRIVADOS CON SERVICIO DOMÉSTICO">
+          HOGARES PRIVADOS CON SERVICIO DOMÉSTICO
+        </option>
+        <option value="HOTELES Y RESTAURANTES">HOTELES Y RESTAURANTES</option>
+        <option value="INDUSTRIAS MANUFACTURERAS">
+          INDUSTRIAS MANUFACTURERAS
+        </option>
+        <option value="INTERMEDIACIÓN FINANCIERA">
+          INTERMEDIACIÓN FINANCIERA
+        </option>
+        <option value="NO DETERMINADO">NO DETERMINADO</option>
+        <option value="ORGANIZACIONES Y ÓRGANOS EXTRATERRITORIALES">
+          ORGANIZACIONES Y ÓRGANOS EXTRATERRITORIALES
+        </option>
+        <option value="OTRAS ACTIV. SERV. COMUNITARIOS, SOCIALES Y PERSONALES">
+          OTRAS ACTIV. SERV. COMUNITARIOS, SOCIALES Y PERSONALES
+        </option>
+        <option value="PESCA">PESCA</option>
+        <option value="SERVICIOS SOCIALES Y DE SALUD">
+          SERVICIOS SOCIALES Y DE SALUD
+        </option>
+        <option value="SUMINISTRO DE ELECTRICIDAD, GAS Y AGUA">
+          SUMINISTRO DE ELECTRICIDAD, GAS Y AGUA
+        </option>
+        <option value="TRANSPORTE, ALMACENAMIENTO Y COMUNICACIONES">
+          TRANSPORTE, ALMACENAMIENTO Y COMUNICACIONES
+        </option>
+      </select>
+      <br />
+
+      <!-- Régimen de Pensión -->
+      <label for="regimen_pension">Régimen de Pensión:</label>
+      <select id="regimen_pension" name="regimen_pension">
+        <option value="DECRETO LEY 19990 - SISTEMA NACIONAL DE PENSIONES (ONP)">
+          DECRETO LEY 19990 - SISTEMA NACIONAL DE PENSIONES (ONP)
+        </option>
+        <option value="NO DETERMINADO">NO DETERMINADO</option>
+        <option value="OTROS">OTROS</option>
+        <option value="PENDIENTE DE ELECCIÓN DE RÉGIMEN PENSIONARIO">
+          PENDIENTE DE ELECCIÓN DE RÉGIMEN PENSIONARIO
+        </option>
+        <option value="SISTEMA PRIVADO DE PENSIONES (SPP)">
+          SISTEMA PRIVADO DE PENSIONES (SPP)
+        </option>
+      </select>
+      <br />
+
+      <!-- Ocupación -->
+      <label for="ocupacion">Ocupación:</label>
+      <select id="ocupacion" name="ocupacion">
+        <option
+          value="AGRICULTORES (EXPLOTADORES); TRABAJADORES CALIFICADOS AGROPECUARIOS Y PESQUEROS"
+        >
+          AGRICULTORES (EXPLOTADORES); TRABAJADORES CALIFICADOS AGROPECUARIOS Y
+          PESQUEROS
+        </option>
+        <option value="JEFES Y EMPLEADOS DE OFICINA">
+          JEFES Y EMPLEADOS DE OFICINA
+        </option>
+        <option
+          value="MIEMBROS DEL PODER EJECUTIVO Y DE LOS CUERPOS LEGISLATIVOS Y PERSONAL DIRECTIVO DE LA ADMINISTRACIÓN PUBLICA Y DE EMPRESAS"
+        >
+          MIEMBROS DEL PODER EJECUTIVO Y DE LOS CUERPOS LEGISLATIVOS Y PERSONAL
+          DIRECTIVO DE LA ADMINISTRACIÓN PUBLICA Y DE EMPRESAS
+        </option>
+        <option value="NO DETERMINADO">NO DETERMINADO</option>
+        <option
+          value="NO ESPECIFICADOS - TRABAJADORES NO CALIFICADOS DE LOS SERVICIOS; PEONES AGROPECUARIOS,FORESTALES DE LA PESCA,DE LAS MINAS Y CANTERAS,IND.MANUFACTURERAS,CONSTRUCCION,PEONES DE CARGA Y VENDEDORES AMBULANTES Y OTROS AFINES."
+        >
+          NO ESPECIFICADOS - TRABAJADORES NO CALIFICADOS DE LOS SERVICIOS;
+          PEONES AGROPECUARIOS,FORESTALES DE LA PESCA,DE LAS MINAS Y
+          CANTERAS,IND.MANUFACTURERAS,CONSTRUCCION,PEONES DE CARGA Y VENDEDORES
+          AMBULANTES Y OTROS AFINES.
+        </option>
+        <option
+          value="OBREROS DE LA CONSTRUCCION, CONFECCIONADORES DE PRODUCTOS DE PAPEL Y CARTON, TRAB.DEL CAUCHO Y PLASTICO,DE LAS ARTES GRAFICAS,FABR. DE INSTRUMENT.DE MUSICA,PINTORES,CONDUCTORES DE MAQUINA Y MEDIOS DE TRANSPORTE(EXCEPTO A PEDAL Y A MANO) Y OTROS AFINES"
+        >
+          OBREROS DE LA CONSTRUCCION, CONFECCIONADORES DE PRODUCTOS DE PAPEL Y
+          CARTON, TRAB.DEL CAUCHO Y PLASTICO,DE LAS ARTES GRAFICAS,FABR. DE
+          INSTRUMENT.DE MUSICA,PINTORES,CONDUCTORES DE MAQUINA Y MEDIOS DE
+          TRANSPORTE(EXCEPTO A PEDAL Y A MANO) Y OTROS AFINES
+        </option>
+        <option
+          value="OBREROS, OPERADORES DE LAS ACTIVIDADES DE MINAS, CANTERAS,PETROLEO,INDUSTRIAS MANUFACT(NO INCLUYE CONFECCION DE PROD.DE PAPEL Y CARTON,ELABORACION DE PRODUCTOS DE CAUCHO Y PLASTICO,ARTES GRAFIC.FABRIC.DE INSTRUMENTOS DE MUSICA) Y OTROS OFICIOS"
+        >
+          OBREROS, OPERADORES DE LAS ACTIVIDADES DE MINAS,
+          CANTERAS,PETROLEO,INDUSTRIAS MANUFACT(NO INCLUYE CONFECCION DE PROD.DE
+          PAPEL Y CARTON,ELABORACION DE PRODUCTOS DE CAUCHO Y PLASTICO,ARTES
+          GRAFIC.FABRIC.DE INSTRUMENTOS DE MUSICA) Y OTROS OFICIOS
+        </option>
+        <option value="PROFESIONALES, CIENTIFICOS E INTELECTUALES">
+          PROFESIONALES, CIENTIFICOS E INTELECTUALES
+        </option>
+        <option
+          value="TRABAJADORES CALIFICADOS DE LOS SERVICIOS PERSONALES, PROTECCION,SEGURIDAD Y VENDEDORES DEL COMERCIO Y MERCADO"
+        >
+          TRABAJADORES CALIFICADOS DE LOS SERVICIOS PERSONALES,
+          PROTECCION,SEGURIDAD Y VENDEDORES DEL COMERCIO Y MERCADO
+        </option>
+        <option value="TÉCNICOS DE NIVEL MEDIO Y TRABAJADORES ASIMILADOS">
+          TÉCNICOS DE NIVEL MEDIO Y TRABAJADORES ASIMILADOS
+        </option>
+      </select>
+      <br />
+
+      <!-- Botón de envío -->
+      <button type="submit">Enviar</button>
+    </form>
+
+    {% if prediction is not none %}
+    <h2>Prediction: {{ prediction }}</h2>
+    {% endif %}
+  </body>
+</html>
