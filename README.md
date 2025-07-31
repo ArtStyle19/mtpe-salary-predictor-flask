@@ -1,6 +1,6 @@
-# 📊 Prediccion de Sueldos MTPE - Perú
+# 📊 Predicción de Sueldos MTPE - Perú
 
-## 👨<200d>💻 Developed by Jorge Guillermo Olarte Quispe
+## 👨‍💻 Developed by Jorge Guillermo Olarte Quispe
 
 ## 🏫 Universidad Nacional del Altiplano – Ingeniería de Sistemas
 
@@ -16,6 +16,8 @@ Aplicación web basada en inteligencia artificial que estima el sueldo mensual d
 | 🖥️ Frontend         | Interfaz web en React + Tailwind para ingresar datos | [`mtpe-salary-predictor-react`](https://github.com/ArtStyle19/mtpe-salary-predictor-react)     |
 | 🔁 Backend          | API REST en Flask con modelo XGBoost                 | [`backend-mtpe-salary-predictor`](https://github.com/ArtStyle19/backend-mtpe-salary-predictor) |
 | 🧹 Preprocesamiento | Limpieza, codificación y entrenamiento del modelo    | Privado                                                                                        |
+
+---
 
 ## 🎯 Objetivo del Proyecto
 
@@ -41,7 +43,59 @@ Diseñar un sistema que, a partir de atributos como **edad, nivel educativo, ocu
    - Normalización con MinMaxScaler
 3. 🔄 **Automatización:** Pipeline con `ColumnTransformer` + persistencia con `joblib`
 4. 📈 **Modelado:** Entrenamiento con XGBoost (regresión) y validación con MAE y RMSE
-5. 🧪 **Evaluación:** MAE original ~\[valor estimado\], error relativo bajo.
+5. 🧪 **Evaluación:** El error promedio entre la predicción y el valor real fue de aproximadamente 844.85 soles peruanos (PEN).
 6. 💾 **Despliegue:** Backend con API `/predict` y `/get-options` + frontend dinámico
+
+---
+
+## 📈 Evaluación del Modelo
+
+### 🔍 Dispersión: Real vs Predicho
+
+![real_vs_pred](images/real_vs_pred.png)
+
+### 📉 Error Absoluto vs Sueldo Real
+
+![abs_error_vs_real](images/abs_error_vs_real.png)
+
+### 📊 Distribución del Error Absoluto
+
+![hist_abs_error](images/hist_abs_error.png)
+
+---
+
+## 🧬 Importancia de Variables (XGBoost)
+
+### 🎯 Feature Importance - Weight
+
+![importance_weight](images/importance_weight.png)
+
+### 🎯 Feature Importance - Gain
+
+![importance_gain](images/importance_gain.png)
+
+### 🎯 Feature Importance - Cover
+
+![importance_cover](images/importance_cover.png)
+
+---
+
+## 👷‍♂️ Ejemplos de Perfiles Analizados (Visuales)
+
+Estos perfiles visuales ayudan a contextualizar los escenarios laborales representados en el modelo:
+
+| Imagen                                                           | Descripción                          |
+| ---------------------------------------------------------------- | ------------------------------------ |
+| ![varon_lima](images/varon_obrero_lima.jpg)                      | Varón obrero en Lima                 |
+| ![mujer_salud](images/mujer_sector_salud.jpg)                    | Mujer trabajadora en salud           |
+| ![mineria](images/varon_sector_mineria.jpg)                      | Varón en sector minería              |
+| ![ind_manuf](images/varon_tecnico_sector_ind_manufactureras.jpg) | Técnico en industrias manufactureras |
+| ![construccion](images/varon_obrero_construccion.jpg)            | Varón obrero en construcción         |
+
+---
+
+## 🧾 Licencia
+
+Este proyecto es de uso académico y de investigación. Los datos pertenecen al MTPE y están bajo licencias de uso abierto.
 
 ---
